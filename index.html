@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <tittle>weather app</tittle>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+</head>
+
+<body class="body" onload="getWeather('Nairobi')">
+    <nav class="nav">
+        <i class="fas fa-bars"></i>
+    </nav>
+    <div class="navscreen">
+        <div class="fullcover"></div>
+        <div class="cover">
+            <ul>
+                <a href="">
+                    <li>home</li>
+                </a>
+                <a href="https://about.me/bethropolis">
+                    <li>about</li>
+                </a>
+                <a href="http://bethlton.ga">
+                    <li>more</li>
+                </a>
+                <a href="mailto:bethropolis@gmail.ga">
+                    <li>feedback</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <h2>What location are you looking for?</h2>
+    <div class="searchBox">
+        <input type="text" placeholder="Nairobi" id="input" class="search">
+        <input type="submit" value="Submit" id="button" class="submit" onclick="getWeather(document.querySelector('.search').value)">
+    </div>
+    <div class="main">
+        <h4>country or city</h4>
+        <div class="cityname">
+            <h3 id="cityname"></h3>
+        </div>
+        <h4>day</h4>
+        <h3 class="day" id="day"></h3>
+        <h4>time of request</h4>
+        <div class="cityname">
+            <h3 id="time"></h3>
+        </div>
+        <h4>weather </h4>
+        <div class="weather">
+            <h4 id="weather"></h4>
+        </div>
+        <img src="" width="75px" height="75px" id="icon" alt="weather icon">
+        <h4>temperature</h4>
+        <div class="temp">
+            <h4 id="temperature"></h4>
+        </div>
+    </div>
+
+    <h3>share:</h3>
+    <div class="share">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-tumblr"></i>
+    </div>
+    <footer>by bethropolis.io</footer>
+    <script src="./script/script.js"></script>
+</body></html>

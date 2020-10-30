@@ -1,2 +1,2 @@
-# WeatherApp
-An HTML, CSS an JS  weather app that displays the current weather of any city there is
+# WeatherAPI
+Call WeatherAPI and retrieve data for specified city.
